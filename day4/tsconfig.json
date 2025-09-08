@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "ESNext", // or another modern target
+    "module": "CommonJS", // or "ESNext" depending on your preference
+   // "outDir": ".", // The output directory is relative to this tsconfig.json
+   // "rootDir": ".", // The root for all input files is this directory
+    "strict": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true
+ },
+   "baseUrl": ".",
+     "paths": {
+      "@dev/*": ["./*"]
+    },
+  "include": [
+    "./*.ts" // Compiles all .ts files in this directory
+  ]
+}
