@@ -10,7 +10,7 @@ interface BankAccount {
 
 class BankAccount implements BankAccount {
   public balance: number;
-  private depositCount: number = 0; // New private property to track deposits
+  private depositCount: number = 0; 
 
   constructor(
     public accountNumber: number,

@@ -25,7 +25,7 @@ numberStorage.addItem(3);
 numberStorage.addItem(4);
 console.log(`Number storage: ${numberStorage.getItems()}`);
 
-const customObjectStorage = new StoreItems<{ id: number, name: string }>(); // Use StoreItems
+const customObjectStorage = new StoreItems<{ id: number, name: string }>(); 
 customObjectStorage.addItem({ id: 1, name: 'Ozzy' });
 customObjectStorage.addItem({ id: 2, name: 'Newman' });
 customObjectStorage.addItem({ id: 3, name: 'Maverick' });

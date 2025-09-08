@@ -12,7 +12,7 @@ class Manager extends Employee {
   }
 
   getDetails(): string {
-    return `${super.getDetails()}, Department: ${this.department}`; // Overrides method
+    return `${super.getDetails()}, Department: ${this.department}`; 
   }
 }
 

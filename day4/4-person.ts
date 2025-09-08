@@ -1,23 +1,34 @@
-interface Person {
-  name: string;
-  age: number;
+
+interface PersonInfo {
+  empName: string;
+  empAge: number;
 }
 
-interface Employee extends Person {
-  employeeId: number;
-  department: string;
+interface EmployeeInfo extends PersonInfo {
+  empId: number;
+  empDepart: string;
 }
 
-function printEmployee(emp: Employee): void {
-  console.log(`Name: ${emp.name}, Age: ${emp.age}, ID: ${emp.employeeId}, Dept: ${emp.department}`);
+class HumanResources implements EmployeeInfo, PersonInfo {
+  constructor(
+    public empName: string,
+    public empAge: number,
+    public empId: number,
+    public empDepart: string
+  ) {}
 }
 
-// Create an object that matches the Employee interface
-const myEmployee: Employee = {
-  name: 'Charlie',
-  age: 45,
-  employeeId: 501,
-  department: 'IT'
+function printEmployee(emp: EmployeeInfo): void {
+  console.log(
+    `Name: ${emp.empName}, Age: ${emp.empAge}, ID: ${emp.empId}, Dept: ${emp.empDepart}`
+  );
+}
+
+const demographics: EmployeeInfo = {
+  empName: "Charlie",
+  empAge: 45,
+  empId: 501,
+  empDepart: "IT"
 };
 
-printEmployee(myEmployee);
+printEmployee(demographics);
