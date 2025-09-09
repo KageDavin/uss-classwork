@@ -1,0 +1,13 @@
+<div class="container text-center mt-5">
+  <div class="redirect-box p-4 rounded shadow">
+    <h1 class="display-4">
+      Redirecting in {{ countdown }} seconds...
+    </h1>
+    <p class="lead">
+      You will be taken to the Day 5 classwork page.
+    </p>
+    <div *ngIf="countdown <= 0" class="spinner-border text-primary" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+  </div>
+</div>
