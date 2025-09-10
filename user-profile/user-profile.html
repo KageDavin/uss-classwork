@@ -1,0 +1,21 @@
+<p>user-profile works!</p>
+
+<div id="containProfile" class="container-profile">
+ <form (ngSubmit)="onSubmit()" #form="ngForm">
+  <div class="profile-fname">
+    <label for="">First Name</label><input type="text" name="" id="fname">
+    <div class="profile-lname">
+      <label for="">Last Name</label><input type="text" name="" id="lname">
+      <div class="profile-email">
+        <label for="">Email</label><input type="email" name="" id="email">
+        <div class="profile-image"><label for="">Image</label>
+          <input type="file" name="" id="image">
+            <div class="profile-buttons"><button class="profile-button" id="formSubmit">Submit</button><button class="profile-button" id="formReset">Reset</button></div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+   </form>
+</div>
+
