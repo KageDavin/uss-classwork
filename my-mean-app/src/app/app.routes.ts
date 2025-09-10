@@ -1,12 +1,11 @@
 import { Routes } from '@angular/router';
-// import { HomeComponent } from './home/home';
-import { Card } from './card/card';
-import { Redirect } from './redirect/redirect';
+import { UserFormOutput } from './user-form/user-form';
+import { UserCardOutput } from './user-card/user-card';
+
 
 export const routes: Routes = [
-  // Default route that shows the HomeComponent at the root path ('')
-  // { path: '', component: Home },
+  { path: '', redirectTo: 'form', pathMatch: 'full' },
+  { path: 'form', component: UserFormOutput },
+  { path: 'card', component: UserCardOutput }
 
-  { path: './card', component: Card },
-   { path: 'redirect-to-classwork', component: Redirect }
 ];
