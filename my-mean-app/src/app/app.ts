@@ -1,6 +1,6 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { CommonModule } from '@angular/common';
+
 import { provideRouter } from '@angular/router';
 import { routes } from './app.routes';
 import { UserFormOutput } from './user-form/user-form';
@@ -12,7 +12,7 @@ import { Card } from './card/card';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, UserFormOutput, UserCardOutput, Card],
+  imports: [RouterOutlet, UserFormOutput, UserCardOutput, Card],
   templateUrl: './app.html',
   styleUrls: ['./app.css']
 })
