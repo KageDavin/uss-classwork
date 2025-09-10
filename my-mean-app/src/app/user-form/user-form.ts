@@ -26,7 +26,7 @@ export class UserFormOutput {
   onSubmit() {
     if (this.userForm.valid) {
       this.userData.emit(this.userForm.value);
-      this.userForm.reset(); // optional: reset after submit
+      this.userForm.reset();
     }
   }
 }

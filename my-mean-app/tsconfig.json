@@ -12,15 +12,21 @@
     "isolatedModules": true,
     "experimentalDecorators": true,
     "importHelpers": true,
-    "target": "ES2022",
-    "module": "preserve"
+    "target": "esnext",
+    "module": "esnext",
+    "baseUrl": "./"
+
   },
-  "angularCompilerOptions": {
-    "enableI18nLegacyMessageIdFormat": false,
-    "strictInjectionParameters": true,
-    "strictInputAccessModifiers": true,
-    "typeCheckHostBindings": true,
-    "strictTemplates": true
+"angularCompilerOptions": {
+  "enableI18nLegacyMessageIdFormat": false,
+  "strictInjectionParameters": true,
+  "strictInputAccessModifiers": true,
+  "typeCheckHostBindings": true,
+  "strictTemplates": true,
+  "strictStandalone": true,
+  "compilationMode": "full",
+  "disableTypeScriptVersionCheck": true
+
   },
   "files": [],
   "references": [
