@@ -1,31 +1,31 @@
+<!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container-fluid">
+  <div class="container">
     <a class="navbar-brand" routerLink="/">My App</a>
-    <div class="collapse navbar-collapse">
-      <ul class="navbar-nav">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-          <a class="nav-link" routerLink="/form">User Form</a>
+          <a class="nav-link" routerLink="./user-form/user-form.html" routerLinkActive="active">Create Profile</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/card">User Card</a>
+          <a class="nav-link" routerLink="./user-card/user-card.html" routerLinkActive="active">View Profile</a>
+        </li>
+            <li class="nav-item">
+          <a class="nav-link" routerLink="./card/card.html" routerLinkActive="active">View Messages</a>
         </li>
       </ul>
     </div>
   </div>
+</nav>
 
-
-
-
+<!-- Routed Content -->
 <div class="container mt-5">
-  <div class="row-md-6">
-  <app-card></app-card>
-</div>
-  <div class="row">
-    <div class="col-md-6 mb-4">
-      <app-user-form (userData)="updateUser($event)"></app-user-form>
-    </div>
-    <div class="col-md-6">
-      <app-user-card [user]="user()"></app-user-card>
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <router-outlet></router-outlet>
     </div>
   </div>
 </div>
