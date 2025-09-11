@@ -4,7 +4,6 @@ html {
 }
 *, *::before, *::after {
   box-sizing: inherit;
-
 }
 body, h1, h2, h3, h4, p, figure, blockquote, dl, dd {
   margin: 0;
@@ -23,3 +22,19 @@ img, picture, video, canvas, svg {
 input, button, textarea, select {
   font: inherit;
 }
+body {
+  background: url('https://www.transparenttextures.com/patterns/green-felt.png');
+  font-family: 'Roboto Slab', serif;
+}
+
+.display-box, input {
+  background-color: #fff;
+  border: 2px inset #888;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+input {
+	width: 300px;
+}
+

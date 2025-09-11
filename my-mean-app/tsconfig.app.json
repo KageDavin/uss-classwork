@@ -11,8 +11,10 @@
   "useDefineForClassFields": true,
   "target": "ES2022",
   "module": "ES2022"
-
   },
+  "angularCompilerOptions": {
+  "strictTemplates": true
+},
   "include": [
     "src/**/*.ts"
   ],

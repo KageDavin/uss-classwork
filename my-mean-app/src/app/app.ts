@@ -3,16 +3,14 @@ import { RouterOutlet } from '@angular/router';
 
 import { provideRouter } from '@angular/router';
 import { routes } from './app.routes';
-import { UserFormOutput } from './user-form/user-form';
-import { UserCardOutput } from './user-card/user-card';
-import { Card } from './card/card';
+
 
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, UserFormOutput, UserCardOutput, Card],
+  imports: [RouterOutlet],
   templateUrl: './app.html',
   styleUrls: ['./app.css']
 })

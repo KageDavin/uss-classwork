@@ -1,12 +1,13 @@
 import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { NgModel } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
+
 
 
 @Component({
   selector: 'app-user-card',
   standalone: true,
-  imports: [NgModel, CommonModule, Input],
+  imports: [FormsModule, CommonModule],
   templateUrl: './user-card.html',
   styleUrls: ['./user-card.css'],
 })
